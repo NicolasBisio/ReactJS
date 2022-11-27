@@ -3,14 +3,15 @@ import NavBar from "./components/NavBar/NavBar";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import './App.css';
 import "./components/NavBar/NavBar.css";
+import "./components/CartWidget/CartWidget.css";
 
 function App() {
   return (
-    <body className="body">
+    <fragment className="body">
       <header className="header" id="encabezado"><NavBar></NavBar>
       </header>
       <ItemListContainer />
-    </body>
+    </fragment>
   );
 }
 

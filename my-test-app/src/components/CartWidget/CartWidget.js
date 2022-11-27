@@ -1,6 +1,8 @@
+import carritoImg from '../../img/carrito.png'
+
 function CartWidget () {
     return (
-        <img src="../../img/carrito.png" alt="carrito"></img>
+        <img src={carritoImg} className="carritoImg" alt="carrito"></img>
     )
 }
 

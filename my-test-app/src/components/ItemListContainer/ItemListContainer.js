@@ -1,13 +1,13 @@
 import Item from "./Item/Item"
 
 function ItemListContainer (props) {
-    const Item = {
+    const item = {
         greeting: "¡Bienvenidos a todos los amantes del tejido a crochet!"
     }
 
     return (
         <div>
-            <Item name = {Item.greeting}/>
+            <Item name = {item.greeting}/>
         </div>
     )
 }
