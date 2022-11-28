@@ -7,11 +7,11 @@ import "./components/CartWidget/CartWidget.css";
 
 function App() {
   return (
-    <fragment className="body">
+    <div className="body">
       <header className="header" id="encabezado"><NavBar></NavBar>
       </header>
-      <ItemListContainer />
-    </fragment>
+      <ItemListContainer greeting="¡Bienvenidos todos los amantes del tejido a crochet!"/>
+    </div>
   );
 }
 

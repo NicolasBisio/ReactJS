@@ -1,13 +1,9 @@
 import Item from "./Item/Item"
 
 function ItemListContainer (props) {
-    const item = {
-        greeting: "¡Bienvenidos a todos los amantes del tejido a crochet!"
-    }
-
     return (
         <div>
-            <Item name = {item.greeting}/>
+            <h1>{props.greeting}</h1>
         </div>
     )
 }
