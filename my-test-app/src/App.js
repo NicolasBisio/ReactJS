@@ -4,14 +4,20 @@ import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
 import './App.css';
 import "./components/NavBar/NavBar.css";
 import "./components/CartWidget/CartWidget.css";
+import {BrowserRouter, Routes, Route} from "react-router-dom"
+import NotFound from './components/NotFound/NotFound';
 
 function App() {
   return (
-    <div className="body">
-      <header className="header" id="encabezado"><NavBar></NavBar>
-      </header>
-      <ItemListContainer greeting="¡Bienvenidos todos los amantes del tejido a crochet!"/>
-    </div>
+    <BrowserRouter>
+      <NavBar/>
+      <Routes>
+        <Route path="/" element={<ItemListContainer/>}></Route>
+        <Route path="/category/:categoryId" element={<ItemListContainer/>}></Route>
+        <Route path="/detail/:productId" element={{/* <ItemDetailContainer/> */}}></Route>
+        <Route path="*" element={<NotFound/>}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
